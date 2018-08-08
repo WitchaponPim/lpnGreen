@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    style="@style/Theme.AppCompat.Light.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/peroid"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/textsize_XH"
+            android:textStyle="bold"
+            android:layout_above="@id/per"
+            android:layout_marginBottom="@dimen/space_X"
+            android:textAlignment="center"
+            android:text="Peroid"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="20dp"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="OK"
+        android:textSize="@dimen/textsize_XXH"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@drawable/button_s1"
+        android:text="มาตรฐาน"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:onClick="standard"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edt_height" />
+</RelativeLayout>

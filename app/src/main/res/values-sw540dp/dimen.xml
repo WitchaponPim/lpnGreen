@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space">10dp</dimen>
+    <dimen name="space_X">20dp</dimen>
+    <dimen name="activity_horizontal_margin">18dp</dimen>
+    <dimen name="activity_vertical_margin">18dp</dimen>
+    <dimen name="list_height">150dp</dimen>
+    <dimen name="list_mini">80dp</dimen>
+    <dimen name="edt_height">80dp</dimen>
+    <dimen name="picWH">150dp</dimen>
+    <dimen name="circle">150dp</dimen>
+    <dimen name="barwitdh">25dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+
+    <dimen name="textsize">16dp</dimen>
+    <dimen name="textsize_H">28dp</dimen>
+    <dimen name="textsize_XH">34dp</dimen>
+    <dimen name="textsize_XXH">65dp</dimen>
+
+    <dimen name="picHeight">450dp</dimen>
+    <dimen name="dialogpicHeight">300dp</dimen>
+</resources>

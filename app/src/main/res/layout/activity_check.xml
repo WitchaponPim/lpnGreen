@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space"
+                android:padding="@dimen/fab_margin"
+                android:text="@string/topic"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_XH"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_marginRight="@dimen/space"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/fab_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space"
+                    android:text="@string/H1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textsize_H"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/topic_purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/para1"
+                    android:textColor="@color/colorpara"
+                    android:textSize="@dimen/textsize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_marginRight="@dimen/space"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/fab_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space"
+                        android:layout_marginRight="@dimen/space"
+                        android:text="@string/H2"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textsize_H"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/subject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="detail"
+                        android:src="@drawable/ic_subject" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/para2"
+                    android:textColor="@color/colorpara"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/img_chk"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="@dimen/fab_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textsize_H"
+                    android:textStyle="bold"
+                    android:text="รูปผู้รายงาน"/>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:background="@color/greyish"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/picHeight" />
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="30dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Ch_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/fab_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space"
+                        android:layout_marginRight="@dimen/space"
+                        android:text="@string/H3"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textsize_H"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edt_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height"
+                        android:background="@drawable/edt_bg"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="กรุณากรอกรายละเอียด"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/res_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/para1"
+                        android:textColor="@color/colorpara"
+                        android:textSize="@dimen/textsize" />
+                    <TextView
+                        android:id="@+id/ch_edit"
+                        android:textColor="#1fa2dc"
+                        android:text="แก้ไข..."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/img_app"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="@dimen/fab_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textsize_H"
+                    android:textStyle="bold"
+                    android:text="รูปผู้อนุมัติ"/>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pagerApp"
+                    android:background="@color/greyish"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/picHeight" />
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicatorApp"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="30dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Ap_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/fab_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space"
+                        android:layout_marginRight="@dimen/space"
+                        android:text="ข้อเสนอแนะ"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/textsize_H"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edt_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height"
+                        android:background="@drawable/edt_bg"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="กรุณากรอกข้อเสนอแนะ(ถ้ามี)"
+                        android:paddingLeft="10dp" />
+                    <TextView
+                        android:id="@+id/res_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ข้อเสนอแนะ"
+                        android:textColor="@color/colorpara"
+                        android:textSize="@dimen/textsize" />
+                    <TextView
+                        android:id="@+id/ap_edit"
+                        android:textColor="#1fa2dc"
+                        android:text="แก้ไข..."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edt_height"
+        android:layout_alignParentBottom="true"
+        android:background="#dedede">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/gallery"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gallery"
+                android:onClick="loadImagefromGallery"
+                android:src="@drawable/ic_gallery"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/uncheck"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_weight="1"
+                android:background="@drawable/btn_capture"
+                android:onClick="capture"
+                android:src="@drawable/ic_camera_dark"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/save"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_weight="1"
+                android:background="@drawable/btn_save"
+                android:onClick="Upload"
+                android:src="@drawable/ic_save"
+                android:theme="@style/MyButton" />
+            <ImageButton
+                android:id="@+id/A_uncheck"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="@drawable/btn_fail"
+                android:onClick="unApprove"
+                android:visibility="gone"
+                android:src="@drawable/ic_fail"/>
+            <ImageButton
+                android:id="@+id/A_check"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@drawable/btn_gallery"
+                android:onClick="Approve"
+                android:visibility="gone"
+                android:src="@drawable/ic_check"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
