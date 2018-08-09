@@ -12,10 +12,15 @@
     <dimen name="barwitdh">25dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
 
+    <dimen name="report_textsize">16dp</dimen>
+    <dimen name="report_traget">18dp</dimen>
+
     <dimen name="textsize">16dp</dimen>
     <dimen name="textsize_H">28dp</dimen>
     <dimen name="textsize_XH">34dp</dimen>
     <dimen name="textsize_XXH">65dp</dimen>
+
+    <dimen name="Header">30dp</dimen>
 
     <dimen name="picHeight">450dp</dimen>
     <dimen name="dialogpicHeight">300dp</dimen>

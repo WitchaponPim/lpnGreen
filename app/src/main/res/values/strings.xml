@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LPN_GREEN</string>
+    <string name="app_name">6 GREEN LPN</string>
     <string-array name="MenuGreen">
         <item>Green EnterPrice</item>
         <item>Green Design Concept</item>
@@ -17,6 +17,18 @@
         <item>@drawable/marketing_management</item>
         <item>@drawable/community_management</item>
     </integer-array>
+
+    <string name="topic">ข้อที่ 1 มีการจัดทำรั้วกันฝุ่น สูง 6 เมตร รอบพื้นที่โครงการ</string>
+
+    <string name="H1">วัตถุประสงค์</string>
+    <string name="para1">ป้องกันเศษวัสดุก่อสร้างร่วงหล่นและฝุ่นละอองฟุ้งกระจายออกนอกพื้นที่</string>
+
+    <string name="H2">วิธีการปฏิบัติงาน</string>
+    <string name="para2">จัดทำรั้วชั่วคราวทึบแลแะแข็งแรง สูงไม่น้อยกว่า 6 เมตร ปิดกั้นตามแนวที่ติดต่อกับที่สาธารณะหรือที่ดินต่างเจ้าของ กรณีติดต่อกับที่สารธารณะจะต้องมีสิ่งปกคลุมทางเดินเพื่อป้องกันวัสดุตกหล่น</string>
+
+    <string name="H3">รายละเอียดการดำเนินการ</string>
+    <string name="home">หน้าเลือกโครงการ</string>
+
     <string name="G1">หมวดที่ 1</string>
     <string name="G2">หมวดที่ 2</string>
     <string name="G3">หมวดที่ 3</string>
@@ -24,6 +36,9 @@
     <string name="G5">หมวดที่ 5</string>
     <string name="G6">หมวดที่ 6</string>
     <string name="G7">หมวดที่ 7</string>
-    <string name="G8">หมวดที่ 8</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>

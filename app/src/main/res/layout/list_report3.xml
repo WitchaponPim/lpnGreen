@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:text="Nitiddddddddddddddd"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="@dimen/textsize_XH"
+            android:textSize="@dimen/Header"
             android:textStyle="bold" />
             <TextView
                 android:id="@+id/PM"
@@ -52,7 +52,7 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
@@ -71,12 +71,12 @@
 
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginRight="20dp"
                             android:gravity="center"
-                            android:text="Project"
+                            android:text="Project\nProgress"
                             android:textColor="@color/colorPrimaryDark"
-                            android:textSize="10dp"
+                            android:textSize="@dimen/report_textsize"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -113,19 +113,16 @@
                             android:textColor="@color/colorPrimaryDark"
                             android:text="S : ไม่ระบุ"
                             android:layout_marginBottom="@dimen/space"
-                            android:autoSizeTextType="uniform"
-                            android:autoSizeMinTextSize="10sp"
-                            android:autoSizeMaxTextSize="100sp"
                             android:layout_width="match_parent"
+                            android:textSize="@dimen/report_traget"
                             android:layout_height="20dp" />
                         <TextView
                             android:id="@+id/done"
                             android:textStyle="bold"
                             android:textColor="@color/colorPrimaryDark"
                             android:text="F : ไม่ระบุ"
-                            android:autoSizeTextType="uniform"
-                            android:autoSizeMinTextSize="10sp"
-                            android:autoSizeMaxTextSize="100sp"
+                            android:textSize="@dimen/report_traget"
+
                             android:layout_width="match_parent"
                             android:layout_height="20dp" />
 
@@ -152,12 +149,12 @@
 
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginRight="20dp"
                             android:gravity="center"
-                            android:text="Green"
+                            android:text="Green\nProgress"
                             android:textColor="#02b98e"
-                            android:textSize="10dp"
+                            android:textSize="@dimen/report_textsize"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -180,7 +177,7 @@
                         app:cpv_unit="%"
                         app:cpv_unitColor="@color/colorPrimaryDark"
                         app:cpv_unitPosition="right_bottom"
-                        app:cpv_unitSize="@dimen/textsize"
+                        app:cpv_unitSize="@dimen/space"
                         app:cpv_value="0" />
                     <LinearLayout
                         android:paddingLeft="@dimen/space"
@@ -194,9 +191,7 @@
                             android:textColor="#02b98e"
                             android:text="เป้า ไม่ระบุ"
                             android:layout_marginBottom="@dimen/space"
-                            android:autoSizeTextType="uniform"
-                            android:autoSizeMinTextSize="10sp"
-                            android:autoSizeMaxTextSize="100sp"
+                            android:textSize="@dimen/report_traget"
                             android:layout_width="match_parent"
                             android:layout_height="20dp" />
                         <TextView
@@ -204,9 +199,7 @@
                             android:textStyle="bold"
                             android:textColor="#02b98e"
                             android:text="ผ่าน ไม่ระบุ"
-                            android:autoSizeTextType="uniform"
-                            android:autoSizeMinTextSize="10sp"
-                            android:autoSizeMaxTextSize="100sp"
+                            android:textSize="@dimen/report_traget"
                             android:layout_width="match_parent"
                             android:layout_height="20dp" />
 
@@ -216,7 +209,7 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
@@ -232,11 +225,11 @@
                             android:tint="#02a8b7" />
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Performance"
+                            android:text="Green\nPerformance"
                             android:textColor="#02a8b7"
-                            android:textSize="10dp"
+                            android:textSize="@dimen/report_textsize"
                             android:textStyle="bold" />
                     </LinearLayout>
                     <at.grabner.circleprogress.CircleProgressView
@@ -258,7 +251,7 @@
                         app:cpv_unit="%"
                         app:cpv_unitColor="@color/colorPrimaryDark"
                         app:cpv_unitPosition="right_bottom"
-                        app:cpv_unitSize="@dimen/textsize"
+                        app:cpv_unitSize="@dimen/space"
                         app:cpv_value="0" />
                     <LinearLayout
                         android:paddingLeft="@dimen/space"
@@ -272,9 +265,7 @@
                             android:textColor="#02a8b7"
                             android:text="ถึงช่วง ไม่ระบุ"
                             android:layout_marginBottom="@dimen/space"
-                            android:autoSizeTextType="uniform"
-                            android:autoSizeMinTextSize="10sp"
-                            android:autoSizeMaxTextSize="100sp"
+                            android:textSize="@dimen/report_traget"
                             android:layout_width="match_parent"
                             android:layout_height="20dp" />
                         <TextView
@@ -282,9 +273,7 @@
                             android:textStyle="bold"
                             android:textColor="#02a8b7"
                             android:text="ผ่าน ไม่ระบุ"
-                            android:autoSizeTextType="uniform"
-                            android:autoSizeMinTextSize="10sp"
-                            android:autoSizeMaxTextSize="100sp"
+                            android:textSize="@dimen/report_traget"
                             android:layout_width="match_parent"
                             android:layout_height="20dp" />
 

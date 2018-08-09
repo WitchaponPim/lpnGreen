@@ -7,8 +7,26 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="textsize">16dp</dimen>
+    <dimen name="picWH">120dp</dimen>
+
+    <dimen name="circle">115dp</dimen>
+    <dimen name="barwitdh">20dp</dimen>
+    <dimen name="report_height">160dp</dimen>
+
+    <dimen name="report_textsize">10dp</dimen>
+    <dimen name="report_traget">14dp</dimen>
+
+    <dimen name="textsize">14dp</dimen>
     <dimen name="textsize_H">20dp</dimen>
-    <dimen name="textsize_XH">35dp</dimen>
-    <dimen name="textsize_XXH">50dp</dimen>
+    <dimen name="textsize_XH">22dp</dimen>
+    <dimen name="title">35dp</dimen>
+    <dimen name="textsize_XXH">35dp</dimen>
+
+    <dimen name="Header">18dp</dimen>
+
+    <dimen name="reportHeight">280dp</dimen>
+    <dimen name="picHeight">300dp</dimen>
+    <dimen name="dialogpicHeight">200dp</dimen>
+
+
 </resources>
