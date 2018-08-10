@@ -17,16 +17,7 @@
         android:layout_below="@id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/peroid"
-            android:layout_width="match_parent"
-            android:textSize="@dimen/textsize_XH"
-            android:textStyle="bold"
-            android:layout_above="@id/per"
-            android:layout_marginBottom="@dimen/space_X"
-            android:textAlignment="center"
-            android:text="Peroid"
-            android:layout_height="wrap_content" />
+
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/per"
